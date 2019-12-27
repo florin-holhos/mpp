@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "desktop_weather_app", "desktop_weather_app\desktop_weather_app.vcxproj", "{FEB4EB20-6A60-4682-AEFE-EB595537A668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Debug|x64.ActiveCfg = Debug|x64
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Debug|x64.Build.0 = Debug|x64
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Debug|x86.ActiveCfg = Debug|Win32
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Debug|x86.Build.0 = Debug|Win32
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Release|x64.ActiveCfg = Release|x64
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Release|x64.Build.0 = Release|x64
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Release|x86.ActiveCfg = Release|Win32
+		{FEB4EB20-6A60-4682-AEFE-EB595537A668}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4CBCD30-46FB-4D2C-B1B2-81999CC5BC36}
+	EndGlobalSection
+EndGlobal
