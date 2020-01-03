@@ -38,6 +38,7 @@ BEGIN_MESSAGE_MAP(CdesktopweatherappDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_EN_CHANGE(input, &CdesktopweatherappDlg::OnEnChangeinput)
+	ON_STN_CLICKED(IDC_test, &CdesktopweatherappDlg::OnStnClickedtest)
 END_MESSAGE_MAP()
 
 
@@ -99,7 +100,13 @@ void CdesktopweatherappDlg::OnEnChangeinput()
 {
 	// get the input value
 	input_ctrl.GetWindowTextW(input_value);
-	if (input_value == "") return;
 	test_ctrl.SetWindowTextW(input_value);
+	// if input is empty don't fetch
+	if (input_value == "") return;
+}
 
+
+void CdesktopweatherappDlg::OnStnClickedtest()
+{
+	// TODO: Add your control notification handler code here
 }
