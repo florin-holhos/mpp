@@ -35,4 +35,5 @@ public:
 	CString input_value;
 	CEdit input_ctrl;
 	CStatic test_ctrl;
+	afx_msg void OnStnClickedtest();
 };
