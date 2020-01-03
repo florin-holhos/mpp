@@ -21,6 +21,7 @@ using namespace std;
 
 CdesktopweatherappDlg::CdesktopweatherappDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_DESKTOP_WEATHER_APP_DIALOG, pParent)
+	, input_value(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -28,11 +29,15 @@ CdesktopweatherappDlg::CdesktopweatherappDlg(CWnd* pParent /*=nullptr*/)
 void CdesktopweatherappDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Text(pDX, input, input_value);
+	DDX_Control(pDX, input, input_ctrl);
+	DDX_Control(pDX, IDC_test, test_ctrl);
 }
 
 BEGIN_MESSAGE_MAP(CdesktopweatherappDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_EN_CHANGE(input, &CdesktopweatherappDlg::OnEnChangeinput)
 END_MESSAGE_MAP()
 
 
@@ -88,3 +93,13 @@ HCURSOR CdesktopweatherappDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+// search input onchange
+void CdesktopweatherappDlg::OnEnChangeinput()
+{
+	// get the input value
+	input_ctrl.GetWindowTextW(input_value);
+	if (input_value == "") return;
+	test_ctrl.SetWindowTextW(input_value);
+
+}
